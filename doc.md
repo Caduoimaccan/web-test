@@ -28,6 +28,7 @@
 - ./ : Đường dẫn tương đối
 - ../ : Trở về thư mục trên 1 cấp
 - / : Đường dẫn tuyệt đối
+- ![alt text](image-48.png)
 
 ### CTRL + K + C: Comment nhanh trong html
 
