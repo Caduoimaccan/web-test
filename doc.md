@@ -28,7 +28,7 @@
 - ./ : Đường dẫn tương đối
 - ../ : Trở về thư mục trên 1 cấp
 - / : Đường dẫn tuyệt đối
-
+- 
 ### CTRL + K + C: Comment nhanh trong html
 
 ### CTRL + K + U: Uncomment nhanh trong html
