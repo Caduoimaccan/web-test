@@ -1,0 +1,619 @@
+html {
+  font-size: 62.5%;
+}
+h1 {
+  color: rgb(160, 153, 79);
+  font-style: inherit;
+  /* Chuyển hoa thường */
+  text-transform: capitalize;
+  /* Căn chỉnh */
+  text-align: center;
+  font-size: 4rem;
+  /* Độ trong suốt càng cao thì càng rõ */
+  opacity: 60%;
+  background-color: rgb(57, 57, 123);
+  /* Không thể chọn */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  background-image: url(../img/anh-demo.jpg);
+  background-size: cover;
+}
+input:checked ~ img {
+  /* display: none; */
+  /* visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
+  /* Sau khi opacity chuyển sang 0 thì nó hidden vì nếu không hidden thì ta vẫn có thể tương tác với phần tử đó được */
+}
+
+img {
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  max-width: 50%;
+  max-height: 50%;
+  /* float: left; */
+}
+
+/* .doanvan {
+  color: rgb(125, 18, 18);
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  visibility: visible;
+} */
+/* .doanvan4 {
+  color: rgb(34, 37, 109);
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  visibility: visible;
+} */
+
+/* p.doanvan.doanvan4 {
+  color: rgb(125, 18, 18);
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  visibility: visible;
+} */
+/* .doanvan.doanvan4 + h3 {
+  color: blueviolet;
+} */
+/* h3 + ul {
+  color: aqua;
+}
+h1 ~ h2 {
+  color: aquamarine;
+} */
+/* [href] {
+  color: bisque;
+} */
+/* a[target="blank"] {
+  color: blue;
+} */
+/* a[title~="pick"] {
+  color: red;
+} */
+.container h1 {
+  font-size: 4rem;
+}
+.container p {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+.container {
+  margin: 0 auto;
+  width: 70rem;
+  background-color: #cb529b16;
+  text-align: center;
+}
+.container img {
+  max-width: 60rem;
+}
+.avatar {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 10px solid rgb(167 161 137 / 0.3);
+  margin-left: -50px;
+}
+
+.avatar:first-child {
+  margin-left: -8px;
+}
+.content {
+  margin-left: 40px;
+  margin-top: 100px;
+  background-color: yellow;
+  padding: 40px;
+  display: inline-block;
+  outline: 20px solid red;
+  outline-offset: 10px;
+  margin-bottom: 100px;
+}
+.div {
+  writing-mode: vertical-lr;
+  border: 2px solid black;
+  margin-block-start: 20px;
+  margin-block-end: 30px;
+}
+.button {
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: rgb(152, 95, 104);
+  border-radius: 999px;
+  color: #000;
+  width: 100px;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+}
+.button:hover {
+  background-color: #000;
+  color: rgb(152, 95, 104);
+}
+a[title*="pick"] {
+  color: brown;
+}
+a[title|="pick"] {
+  color: pink;
+}
+a[title^="pick"] {
+  color: red;
+}
+a[title$="2"] {
+  color: green;
+}
+/* a:link {
+  color: beige;
+} */
+#line3:hover {
+  color: aliceblue;
+  font-size: 30px;
+}
+/* Di chuột qua */
+.doanvan.doanvan4:hover {
+  color: gray;
+  font-size: 2rem;
+}
+/* Giữ chuột */
+.doanvan:active {
+  color: pink;
+  font-size: 1.5rem;
+}
+/* Chưa nhấn vào link */
+.click_me:link {
+  color: aqua;
+}
+/* Đã nhấn vào link */
+/* .click_me:visited {
+  color: yellow;
+} */
+/* .div_elm:empty {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+} */
+/* h2:target {
+  color: pink;
+} */
+/* a:first-child {
+  color: black;
+} */
+/* a:last-child {
+  color: brown;
+} */
+/* p:nth-child(even) {
+  color: pink;
+} */
+/* h3:first-of-type {
+  color: blue;
+} */
+/* .top:not(:first-of-type) {
+  color: green !important;
+} */
+.box4 {
+  margin-top: 50px;
+  height: 100px;
+  background-color: rgba(184, 171, 171, 0.513);
+  border-radius: 20px;
+  /* trên, dưới - phải, trái */
+  /* trên - phải, trái - dưới */
+  /* trên - dưới - phải - trái */
+  /* padding: 20px; */
+  /* border: 10px dotted black; */
+  /* border-width: 10px 20px 30px 40px;
+  border-style: groove double; */
+  /* border-color: aquamarine beige black blue; */
+  /* border-radius: 10px 20px; */
+  /* border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 20px; */
+  /* border-top: ;
+  border-left: ;
+  border-right: ;
+  border-bottom: ; */
+}
+@supports (
+    backdrop-filter: blur(5px) hue-rotate(120deg) drop-shadow(4px 4px 10px blue)
+      brightness(60%) invert(70%) grayscale(30%) sepia(90%)
+  )
+  or
+  (
+    -webkit-backdrop-filter: blur(5px) hue-rotate(120deg) drop-shadow(
+        4px 4px 10px blue
+      ) brightness(60%) invert(70%) grayscale(30%) sepia(90%)
+  ) {
+  .box4 {
+    margin-top: 50px;
+    height: 100px;
+    background-color: rgba(184, 171, 171, 0.513);
+    border-radius: 20px;
+    backdrop-filter: blur(5px) hue-rotate(120deg) drop-shadow(4px 4px 10px blue)
+      brightness(60%) invert(70%) grayscale(30%) sepia(90%);
+    -webkit-backdrop-filter: blur(5px) hue-rotate(120deg)
+      drop-shadow(4px 4px 10px blue) brightness(60%) invert(70%) grayscale(30%)
+      sepia(90%);
+  }
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  border: 10px solid blue;
+  box-sizing: content-box;
+  margin: 20px;
+}
+.box1 {
+  height: 300px;
+  padding: 100px;
+  border: 10px dotted blue;
+  background: #4158d0 url(../img/anh-demo.jpg) left / cover no-repeat border-box
+    border-box fixed;
+  /* background-clip: padding-box; */
+}
+body {
+  background-color: #ddd;
+  /* font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+}
+
+p,
+h3,
+a {
+  font-size: 2rem;
+  /* font-family: "Font Awesome 5 Free"; */
+  /* line-height = 1.5 font-size */
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
+  /* text-align: justify; */
+  /* text-decoration: overline; */
+  text-indent: 20px;
+  text-transform: capitalize;
+  /* white-space: nowrap; */
+  /* word-break: break-all; */
+}
+
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-shadow: 5px 5px 2px rgb(160, 110, 110);
+  overflow: scroll;
+}
+.box3 {
+  height: 100vh;
+  background-image: url(../img/leaf.png), url(../img/anh-demo.jpg);
+  background-size: 20% 20%, cover;
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+/* width */
+.box3::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.box3::-webkit-scrollbar-track {
+  background: #b84949;
+}
+
+/* Handle */
+.box3::-webkit-scrollbar-thumb {
+  background: #ac9999;
+}
+
+/* Handle on hover */
+.box3::-webkit-scrollbar-thumb:hover {
+  background: #bd5c90;
+}
+p {
+  /* width: 300px; */
+  overflow: hidden;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+li {
+  /* list-style-type: none; */
+  margin-top: 4px;
+}
+/* .fa-brands,
+.fa-solid {
+  color: violet;
+  margin-right: 10px;
+} */
+.text_hl {
+  color: #4158d0;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .text_hl {
+    color: transparent;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+.box2 {
+  /* width: 200px;
+  height: 200px; */
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+
+  /* background: url(../img/anh-demo.jpg) center/ cover; */
+  /* clip-path: circle(50%); */
+  /* r = 40% * max(w, h) */
+  /* clip-path: inset(20px 40px 30px 10px round 20px); */
+  /* clip-path: polygon(0 0, 100% 0, 60% 100%, 20% 100%, 10% 20%); */
+  /* Có thể cắt nhiêu điểm */
+  /* border-radius: 20px; */
+  /* background-color: pink; */
+  margin: 100px;
+  /* box-shadow: 60px -16px 20px 5px red; */
+  /* Chèn bóng lên obj */
+  /* box-shadow: inset 1rem 1rem 2rem gold; */
+  /* box-shadow: 10px 0 5px green, 20px 0 10px red, 30px 0 15px yellow; */
+  border-radius: 15px;
+  pointer-events: none;
+}
+.anh_demo {
+  max-width: 70%;
+  /* mẹo căn giữa */
+  display: block;
+  margin: 0 auto;
+}
+
+.box5 {
+  max-width: 700px;
+  background-color: cyan;
+  margin: 0 auto;
+}
+p::first-line {
+  color: red;
+}
+p::first-letter {
+  font-size: 10rem;
+}
+p::selection {
+  background-color: cyan;
+}
+li::marker {
+  color: red;
+  font-size: 2rem;
+}
+.box5::after {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  border-radius: 999px;
+  content: "hello";
+  font-size: 100px;
+  color: blue;
+  background-color: red;
+}
+.box6 {
+  counter-reset: section;
+  padding-left: 30px;
+  background-color: rgb(162, 122, 34);
+}
+/* h2 {
+  counter-increment: section;
+  color: rgb(154, 49, 49);
+  counter-reset: section1;
+}
+h2::before {
+  content: "Phần " counter(section) ": ";
+}
+h3 {
+  counter-increment: section1;
+  color: rgb(59, 59, 163);
+} */
+h3::before {
+  content: counter(section) "." counter(section1);
+}
+/* .nav {
+  width: calc(100% - 100px);
+  height: 100px;
+  background-color: gray;
+  margin: 0 auto;
+} */
+.main_content {
+  background-color: rgb(70, 70, 202);
+  height: calc(100vh - 100px);
+}
+:root {
+  --box-height: 100px;
+  --color: green;
+}
+.content1 {
+  --background-box: red;
+  position: relative;
+  margin: 40px;
+  background-color: gray;
+}
+.box10 {
+  position: absolute;
+}
+.box7 {
+  height: var(--box-height);
+  width: 300px;
+  background-color: var(--background-box, purple);
+  margin-bottom: 10px;
+  /* position: relative; */
+  left: 50px;
+  /* -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s; */
+}
+.box8 {
+  height: var(--box-height);
+  width: 200px;
+  background-color: var(--color);
+  margin-bottom: 10px;
+  /* position: absolute; */
+  /* top: 0px;
+  left: 0px; */
+  z-index: 2;
+}
+.box9 {
+  height: var(--box-height);
+  background-color: blue;
+  margin-bottom: 10px;
+  width: 100px;
+  /* z-index xếp lần lượt theo thứ tự từ nhỏ đến lớn, cái nào lớn nhất thì nằm trên cùng */
+  z-index: 3;
+}
+.detail {
+  --p_font-size: 30px;
+}
+.detail span {
+  font-size: var(--p_font-size);
+}
+.notice {
+  margin: 5rem;
+  font-size: 10rem;
+  /* color: violet; */
+  position: relative;
+}
+
+.mes-number {
+  font-size: 4rem;
+  padding: 0.5rem;
+  background-color: rgb(175, 47, 139);
+  color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  left: 80px;
+  top: -15px;
+}
+.notice a {
+  font-size: 10rem;
+  color: #0086ff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.nav {
+  background-color: gray;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.nav li {
+  display: inline-block;
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+h1 {
+  margin-top: 70px;
+}
+.content2 {
+  margin-top: 100px;
+  width: 400px;
+  height: 500px;
+  background: cyan;
+  overflow: auto;
+}
+h2 {
+  background: yellow;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.item_ul {
+  height: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background: cyan;
+  gap: 40px;
+
+  align-content: space-evenly;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: wrap column;
+}
+.item_ul li {
+  width: 30%;
+  font-size: 30px;
+  background-color: blue;
+}
+.container1 {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.boxx {
+  background-color: blue;
+  border: 1px solid black;
+  /* width: 30%; */
+  /* flex-basis: 30%; */
+  /* flex-shrink: 0; */
+  /* width: 100px; */
+  /* bằng min(max-width, flex-basis) */
+  /* max-width: 100px;
+  min-width: 100px; */
+  /* grow shrink basis */
+  /* flex: 1 1 100px; */
+}
+/* .boxx2,
+.boxx1,
+.boxx3 {
+  flex-grow: 1;
+  align-self: center;
+  flex-shrink: 0;
+}
+.boxx4,
+.boxx5 {
+  flex-grow: 2;
+} */
+.boxx1 {
+  background-color: blue;
+}
+.boxx2 {
+  background-color: red;
+  /* order: 1; */
+  margin: auto;
+}
+.boxx3 {
+  background-color: pink;
+}
+.boxx4 {
+  background-color: violet;
+}
